@@ -9,7 +9,7 @@ function Imageshoe() {
     "https://thumbs.dreamstime.com/b/collection-vector-logo-sportwear-brands-adidas-new-balance-under-armour-jordan-kappa-asics-reebok-nike-vans-converse-collection-222305695.jpg",
     "https://hips.hearstapps.com/hmg-prod/images/1-coolest-sneakers-2023-index-comp-1674143020.jpg",
     "https://images.squarespace-cdn.com/content/v1/58ee0b551e5b6c8ff18b94ad/1612266928154-14XJBOAH621LTBJI57OV/Nike+Air+Jordan+Sneaker.jpg?format=2500w"
-  ];  
+  ];     
 
   const nextImage = () => {
     setCurrentImage(currentImage === images.length - 1 ? 0 : currentImage + 1);
