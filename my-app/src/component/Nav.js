@@ -13,7 +13,7 @@ const Nav = () => {
            </button>
         </li>
         <li className="flex">  
-          <ul className="flex justify-end space-x-6 ">
+          <ul className="flex justify-end space-x-6 ">  
             <li>
               <a href="#" className="bg-white text-black py-2 px-4 rounded-lg font-bold hover:text-black hover:bg-yellow-500">Home</a>
             </li>  
