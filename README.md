@@ -12,6 +12,11 @@ Shopping Cart: Users can add items to their shopping cart and view the items in 
 2. Tailwind CSS: The app's styling is done using Tailwind CSS, a utility-first CSS framework.
 3. JSX.
 
+# Deployment
+This app is deployed on Netlify at the following URL: https://64cad05ad1830007d2fcf5f2--musical-hotteok-33fc63.netlify.app/
+
+
+
 # Backend service 
  API https://example-data.draftbit.com/sneakers?_limit=10
 
