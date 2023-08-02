@@ -1,62 +1,76 @@
-import { useState } from 'react';
+import React from "react";
 
-function Imageshoe() {
-  const [currentImage, setCurrentImage] = useState(0);
-
-  const images = [
-    "https://i8.amplience.net/i/office/23_SUMMER_SALE_HP1_EXTRA20_Desktop",
-    "https://golfdigest.sports.sndimg.com/content/dam/images/golfdigest/products/2023/6/16/20230616-puma-custom-shoes.jpg.rend.hgtvcom.966.544.suffix/1686924226554.jpeg",
-    "https://thumbs.dreamstime.com/b/collection-vector-logo-sportwear-brands-adidas-new-balance-under-armour-jordan-kappa-asics-reebok-nike-vans-converse-collection-222305695.jpg",
-    "https://hips.hearstapps.com/hmg-prod/images/1-coolest-sneakers-2023-index-comp-1674143020.jpg",
-    "https://images.squarespace-cdn.com/content/v1/58ee0b551e5b6c8ff18b94ad/1612266928154-14XJBOAH621LTBJI57OV/Nike+Air+Jordan+Sneaker.jpg?format=2500w"
-  ];     
-
-  const nextImage = () => {
-    setCurrentImage(currentImage === images.length - 1 ? 0 : currentImage + 1);
-  };         
-
-  const prevImage = () => {   
-    setCurrentImage(currentImage === 0 ? images.length - 1 : currentImage - 1);
-  };  
-   
-  return (                    
-    <div className="relative overflow-hidden h-screen">
-      <div className="flex justify-center items-center h-48 md:h-72 m-3">
-        <div className="relative overflow-hidden w-full h-full rounded-md shadow-md">
-          <img
-            src={images[currentImage]}
-            alt="Shoe image"
-            className="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000"
-            style={{ animationDelay: `${currentImage * 5}s` }}
-            loading="lazy"
-          />
-          <button className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 bg-opacity-50 hover:bg-opacity-75 text-white font-bold py-2 px-4 rounded-full" onClick={prevImage}>
-            &lt;
-          </button>
-          <button className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 bg-opacity-50 hover:bg-opacity-75 text-white font-bold py-2 px-4 rounded-full" onClick={nextImage}>
-            &gt;
-          </button>
+const ImageShoe = () => {
+  return (
+    <div className="grid grid-cols-5 gap-4 mx-auto max-w-7xl">
+      <div className="bg-white rounded-lg overflow-hidden shadow-md">
+        <img
+          src="https://wallpapercave.com/wp/wp10269488.jpg"
+          alt="Jordan 1"
+          className="w-full h-64 object-cover"
+        />
+        <div className="p-4">
+          <h2 className="font-bold text-xl mb-2">HyperAdapt 1.0</h2>
+          <p className="text-gray-700 text-base"> 
+          Nike Unmatched performance |"HyperAdapt 1.0"
+          </p>
         </div>
       </div>
-      <div className="flex justify-center mt-4">
-        {images.map((image, index) => (
-          <div
-            key={index}
-            className={`relative overflow-hidden h-12 w-12 md:h-16 md:w-16 rounded-md shadow-md mx-2 cursor-pointer ${index === currentImage ? 'border-2 border-blue-500' : ''}`}
-            onClick={() => setCurrentImage(index)}
-          >
-            <img
-              src={image}
-              alt="Shoe image"
-              className="absolute inset-0 w-full h-full object-cover"
-              style={{ animationDelay: `${index * 5}s` }}
-              loading="lazy"
-            />
-          </div>
-        ))}
+      <div className="bg-white rounded-lg overflow-hidden shadow-md">
+        <img
+          src="https://c4.wallpaperflare.com/wallpaper/723/80/34/michael-jordan-cool-pictures-wallpaper-preview.jpg"
+          alt="Michael Jordan"
+          className="w-full h-64 object-cover"
+        />
+        <div className="p-4">
+          <h2 className="font-bold text-xl mb-2">Jordans</h2>
+          <p className="text-gray-700 text-base">
+          MJ's kicks and feel the greatness flow through you | "J's"
+          </p>
+        </div>
+      </div>
+      <div className="bg-white rounded-lg overflow-hidden shadow-md">
+        <img
+          src="https://media.istockphoto.com/id/1208683466/photo/colorful-sport-shoes-on-mustard-color-backround.jpg?s=612x612&w=0&k=20&c=i4qjpMawsnjPME39tAusZQjAr-X9tIRxndO8GH6dyhU="
+          alt="Colorful Sport Shoes"
+          className="w-full h-64 object-cover"
+        />
+        <div className="p-4">
+          <h2 className="font-bold text-xl mb-2">Red Skechers</h2>
+          <p className="text-gray-700 text-base">
+          Comfort meets style | "Skechers"
+          </p>
+        </div>
+      </div>
+      <div className="bg-white rounded-lg overflow-hidden shadow-md">
+        <img
+          src="https://www.kickscrew.com/cdn/shop/articles/Untitled_design_1_1920x.jpg?v=1660125252"
+          alt="Yeezy Boost 350"
+          className="w-full h-64 object-cover"
+        />
+        <div className="p-4">
+          <h2 className="font-bold text-xl mb-2">BRED</h2>
+          <p className="text-gray-700 text-base">
+           Air Jordan 1 Sneakers Are Worth the Hype | "BRED"
+
+          </p>
+        </div>
+      </div>
+      <div className="bg-white rounded-lg overflow-hidden shadow-md">
+        <img
+          src="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2019%2F04%2Fadidas-nite-jogger-triple-black-carbon-colorway-release-1.jpg?cbr=1&q=90"
+          alt="Adidas Nite Jogger"
+          className="w-full h-64 object-cover"
+        />
+        <div className="p-4">
+          <h2 className="font-bold text-xl mb-2">Nite Jogger</h2>
+          <p className="text-gray-700 text-base">
+          Adidas Originals Nite Jogger in "Triple Black" | Hypebeast
+          </p>
+        </div> 
       </div>
     </div>
   );
-}
+};
 
-export default Imageshoe;
+export default ImageShoe;

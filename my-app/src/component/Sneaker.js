@@ -26,7 +26,7 @@ const Sneaker = () => {
   }, []);
 
   return (
-    <div className="bg-gray-500 p-8">
+    <div className="bg-black p-8">
     <h1 className="text-3xl bg-yellow-500 font-bold text-center mb-8"> Today's Deals </h1>
     <ul className="grid grid-cols-2 gap-8 justify-center">
       {sneakers.map(sneaker => (
@@ -39,7 +39,7 @@ const Sneaker = () => {
             <p><span className="font-bold">Colorway:</span> {sneaker.colorway}</p>
             <p><span className="font-bold">Gender:</span> {sneaker.gender}</p>
             <p><span className="font-bold">Release Date:</span> {sneaker.releaseDate}</p>
-            <p><span className="font-bold">Price: $</span>{sneaker.retailPrice}</p>
+            <p><span className="font-bold">Price: $</span> {sneaker.retailPrice}</p>
             <button className="bg-yellow-500 hover:bg-black m-3 text-white font-bold py-2 px-4 rounded-lg">
             Add to Cart
            </button>
