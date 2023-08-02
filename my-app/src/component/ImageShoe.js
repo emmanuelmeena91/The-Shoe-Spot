@@ -19,7 +19,7 @@ function Imageshoe() {
     setCurrentImage(currentImage === 0 ? images.length - 1 : currentImage - 1);
   };  
    
-  return (
+  return (                  
     <div className="relative overflow-hidden h-screen">
       <div className="flex justify-center items-center h-48 md:h-72 m-3">
         <div className="relative overflow-hidden w-full h-full rounded-md shadow-md">
