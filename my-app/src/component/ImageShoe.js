@@ -15,7 +15,7 @@ function Imageshoe() {
     setCurrentImage(currentImage === images.length - 1 ? 0 : currentImage + 1);
   };       
 
-  const prevImage = () => {
+  const prevImage = () => {   
     setCurrentImage(currentImage === 0 ? images.length - 1 : currentImage - 1);
   };  
    
