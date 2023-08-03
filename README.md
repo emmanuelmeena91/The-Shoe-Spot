@@ -13,8 +13,8 @@ Shopping Cart: Users can add items to their shopping cart and view the items in 
 3. JSX.
 
 # Deployment
-This app is deployed on Netlify at the following URL: https://64cad05ad1830007d2fcf5f2--musical-hotteok-33fc63.netlify.app/
-
+This app is deployed on Netlify at the following URL: 
+ 
 
 
 # Backend service 

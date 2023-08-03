@@ -43,6 +43,7 @@ const Sneaker = () => {
         <ul className="grid grid-cols-5 gap-4 justify-center">
           {cart.map(sneaker => (
             <li key={sneaker.id} className="flex flex-col items-center bg-white rounded-lg shadow-lg p-4">
+           <p className="bg-yellow-200 text-green-500 px-3 rounded-lg"><span class="text-green-500 text-2xl font-bold">&#x2713;</span> Added to Cart</p>                
               <img src={sneaker.imageUrl} alt={sneaker.title} className="w-full h-auto object-contain max-w-md max-h-64 mb-4" />
               <div className="text-lg text-center">
                 <h2 className="font-bold mb-2">{sneaker.title}</h2>
@@ -56,6 +57,8 @@ const Sneaker = () => {
                   onClick={() => handleRemoveFromCart(sneaker.id)}>
                   Remove
                 </button>
+                <br/>
+                 <button className="bg-orange-500 hover:bg-black m-3 text-white font-bold py-2 px-4 rounded-lg">Buy</button>
               </div>
             </li>
           ))}
@@ -80,7 +83,7 @@ const Sneaker = () => {
               </button>
             </div>
           </li>
-        ))}
+        ))}  
       </ul>
     </div>
   );

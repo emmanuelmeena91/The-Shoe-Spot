@@ -1,8 +1,20 @@
-import React from "react";
+import React from 'react'
 
-const ImageShoe = () => {
+ const Home = () => {
   return (
-    <div className="grid grid-cols-5 gap-4 mx-auto max-w-7xl">
+    <div>
+       <h1 className="text-7xl font-bold text-white shadow-silver bg-black p-4 ml-2 mr-2 mt-2 mb-2">The-Shoe-Spot</h1>
+       <div className="bg-black text-white">
+         <ul className="flex items-center justify-between ml-10 max-w-4xl mx-auto py-4 px-6">
+        <li className="flex items-center ml-7">
+          <img src='https://www.shutterstock.com/image-vector/modern-designer-mens-sneaker-logo-600w-2240796723.jpg' alt="The Shoe Spot" className="rounded-full h-12 w-12 mr-2 h-16 w-16 mr-2"></img>
+          <a href="#" className="font-bold text-xl">The Shoe Spot</a>
+         
+        </li>
+        </ul>
+        </div>
+          
+        <div className="grid grid-cols-5 gap-4 mx-auto max-w-7xl mt-10 ">
       <div className="bg-white rounded-lg overflow-hidden shadow-md">
         <img
           src="https://wallpapercave.com/wp/wp10269488.jpg"
@@ -68,8 +80,13 @@ const ImageShoe = () => {
           </p>
         </div> 
       </div>
+      <footer className="bg-black mt-9 py-4" style={{position: "absolute", bottom: 0, left: 0, right: 0, width: "100%"}}>
+  <h1 className="text-gray-300 text-center">"Shoe love is true love - find your sole mate in our collection!"</h1>
+</footer>
     </div>
-  );
-};
 
-export default ImageShoe;
+    </div>
+  )
+}
+
+export default Home;

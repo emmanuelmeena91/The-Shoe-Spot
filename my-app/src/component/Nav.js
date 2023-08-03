@@ -1,32 +1,28 @@
-import React from 'react'
-import ImageShoe from './ImageShoe';
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Nav = () => {
   return (
-    <nav className="bg-black text-white">
-      <ul className="flex items-center justify-between ml-10 max-w-4xl mx-auto py-4 px-6">
-        <li className="flex items-center ml-7">
-          <img src='https://www.shutterstock.com/image-vector/modern-designer-mens-sneaker-logo-600w-2240796723.jpg' alt="The Shoe Spot" className="rounded-full h-12 w-12 mr-2 h-16 w-16 mr-2"></img>
-          <a href="#" className="font-bold text-xl">The Shoe Spot</a>
-         
-        </li>
-        <li className="flex">
-          <ul className="flex justify-end space-x-6 ">
-            <li>
-              <a href="#" className="bg-white text-black py-2 px-4 rounded-lg font-bold hover:text-black hover:bg-yellow-500">Home</a>
-            </li>
-            <li>
-              <a href="#" className="bg-white text-black py-2 px-4 rounded-lg font-bold hover:text-black hover:bg-yellow-500">About</a>
-            </li>
-            <li>
-              <a href="#" className="bg-white text-black py-2 px-4 rounded-lg font-bold hover:text-black hover:bg-yellow-500">Contact</a>
-            </li>
-          </ul>
-        </li>
-      </ul> 
-      <ImageShoe/>
-    </nav>
-  )
-}
+    <div className="text-center py-4 bg-black">
+      <nav className="bg-black text-white inline-block">
+        <ul>
+          <li className="flex">
+            <ul className="flex justify-end space-x-6 ">
+              <li>
+                <NavLink exact to="/" className="bg-white text-black py-2 px-4 rounded-lg font-bold hover:text-black hover:bg-yellow-500">Home</NavLink>
+              </li>
+              <li>
+                <NavLink to="/about" className="bg-white text-black py-2 px-4 rounded-lg font-bold hover:text-black hover:bg-yellow-500">About</NavLink>
+              </li>
+              <li>
+                <NavLink to="/shopnow" className="bg-white text-black py-2 px-4 rounded-lg font-bold hover:text-black hover:bg-yellow-500">Shop Now</NavLink>
+              </li>
+            </ul>
+          </li>
+        </ul> 
+      </nav>
+    </div>
+  );
+};
 
 export default Nav;
