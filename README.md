@@ -14,7 +14,8 @@ Shopping Cart: Users can add items to their shopping cart and view the items in 
 
 # Deployment
 This app is deployed on Netlify at the following URL: 
- 
+
+https://64cc9f6574696f61474b9f42--peaceful-conkies-9d9163.netlify.app/
 
 
 # Backend service 
